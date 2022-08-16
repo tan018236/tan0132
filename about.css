@@ -1,0 +1,282 @@
+
+.navbar{
+    width: 100%;
+    background-color: burlywood;
+}
+
+.card{
+    width: 100%;
+    height: 400px;
+    margin-top: 7%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 4px solid black;
+}
+
+.card-body{
+    display: flex;
+    gap: 15px;
+}
+
+.profile{
+    width: 300px;
+    height: 300px;
+    margin-top: 10%;
+    /* margin-bottom: 10; */
+}
+.text > h3 {
+    font-size: 23px;
+}
+.btn{
+    border: 2px solid white;
+    margin-right: 2px;
+    border-radius: 4px;
+    background-color:cadetblue;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+@media screen and (min-width:320px) {
+    .navbar{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+        height: 550px;
+    }
+    .card-body{
+        display: inline-block;
+      
+    }
+    .profile{
+        border-radius: 50%;
+        height: 250px;
+        margin-top: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .text > h2,h3{
+        font-size: 18px;
+        text-align: center;
+    }
+    .text > h3{
+        font-size: 16px;
+    }
+    .waviy > span {
+        font-size: 23px;
+    }
+   .carousel-inner{
+    height: 250px;
+    width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+   }
+}
+
+@media screen and (min-width:375px) {
+    .navbar{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+        height: 600px;
+    }
+    .card-body{
+        display: inline-block;
+      
+    }
+    .profile{
+        border-radius: 50%;
+        height: 300px;
+        margin-top: 6px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+      .text > h2,h3{
+          font-size: 21px;
+          text-align: center;
+      }
+      .text > h3{
+          font-size: 16px;
+      }
+      .waviy > span {
+        font-size: 23px;
+      }
+      .carousel-inner{
+        height: 250px;
+        width: 240px;
+        margin-left: auto;
+        margin-right: auto;
+       }
+}
+@media screen and (min-width:425px) {
+    .navbar{
+        width: 100%;
+        text-align: center;
+    }
+    .card{
+        width: 100%;
+        height: 750px;
+    }
+    .card-body{
+        display: inline-block;
+      
+    }
+    .profile{
+        border-radius: 50%;
+        height: 400px;
+        margin-top: 6px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+      .text > h2,h3{
+          font-size: 25px;
+          text-align: center;
+      }
+      .text > h3{
+          font-size: 20px;
+      }
+      .waviy > span{
+        font-size: 29px;
+      }
+      .carousel-inner{
+        height: 350px;
+        width: 320px;
+        position: relative;
+        margin-left: -10px;
+        margin-right: auto;
+       }
+}
+@media screen and (min-width:768px) {
+    .navbar{
+        width: 100%;
+        text-align: center;
+    }
+    .card{
+        width: 100%;
+        height: 500px;
+    }
+    .card-body{
+        display: flex;
+        margin-top: 15px;
+    }
+    .profile{
+        border-radius: 10px;
+        height: 400px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+      .text > h2,h3{
+          font-size: 28px;
+          font-weight: 500;
+      }
+      .text > h3{
+          font-size: 23px;
+      }
+      .waviy > span{
+        font-size: 40px;
+      }
+      .carousel-inner{
+        height: 350px;
+        width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+       }
+      
+}
+@media screen and (min-width:1024px) {
+    .navbar{
+        width: 100%;
+    }
+    .card{
+        width: 100%;
+        height: 500px;
+    }
+    .card-body{
+        /* display: flex; */
+        margin-top: 15px;
+    }
+    .profile{
+        border-radius: 10px;
+        height: 400px;
+        margin-top: 8px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 400px;
+    }
+    .text > h1{
+        font-size: 40px;
+      }
+      .text > h2,h3{
+          font-size: 35px;
+          font-weight: 500;
+      }
+      .text > h3{
+          font-size: 30px;
+          font-weight: 400;
+      }
+      .waviy > span{
+        font-size: 40px;
+      }
+      .carousel-inner{
+        height: 350px;
+        width: 740px;
+        margin-left: auto;
+        margin-right: auto;
+       }
+}
+
+#profile{
+    animation-name:profile ;
+    position: relative;
+    animation-duration: 2s ;
+    animation-fill-mode: forwards;
+  }
+  @keyframes profile {
+    0%{
+        transform: translateX(-1000px);
+    }
+    50%{
+        transform:rotateX(380deg);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+  }
+  
+.waviy{
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(2,2,2,0.2));
+    font-size: 20px;
+  }
+  .waviy span {
+    font-family: 'Alfa Slab One', cursive;
+    position: relative;
+    display: inline-block;
+    color:black;
+    animation: waviy 3s ;
+    animation-delay: calc(.1s * var(--i));
+}
+@keyframes waviy{
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+.carousel{
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+}
+.d-block{
+    height: 700px;
+}
